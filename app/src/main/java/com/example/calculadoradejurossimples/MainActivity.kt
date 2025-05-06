@@ -51,9 +51,16 @@ class MainActivity : AppCompatActivity() {
             rbtTaxa.setOnClickListener { atualizarCampos() }
             rbtPrazo.setOnClickListener { atualizarCampos() }
             //Evellyn daqui pra baixo
-
+            btnLimpar.setOnClickListener {
+                txtJuros.text.clear()
+                txtCapital.text.clear()
+                txtTaxa.text.clear()
+                txtPrazo.text.clear()
+                rbtJuros.isChecked = true
+                atualizarCampos()
+                txtCapital.requestFocus()
+            }
             //Vitinho daqui pra baixo
-
                 //Kauan daqui pra baixo
 
             }
