@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
             rbtCapital.setOnClickListener { atualizarCampos() }
             rbtTaxa.setOnClickListener { atualizarCampos() }
             rbtPrazo.setOnClickListener { atualizarCampos() }
+
             // Zerbinati daqui pra baixo
 
             btnLimpar.setOnClickListener {
@@ -63,6 +64,15 @@ class MainActivity : AppCompatActivity() {
             }
             //Vitinho daqui pra baixo
 
+            btnCalcular.setOnClickListener {
+                val cap = txtCapital.text.toString().toDoubleOrNull() ?: 0.00
+                val tax = txtTaxa.text.toString().toDoubleOrNull() ?: 0.00
+                val prz = txtPrazo.text.toString().toIntOrNull() ?: 0
+                val juros = txtJuros.text.toString().toDoubleOrNull() ?: 0.00
+                var calcC = 0.00
+                var calcI = 0.00
+                var calcN = 0
+                var calcJ = 0.00
                 //Kauan daqui pra baixo
 
             }
