@@ -50,7 +50,8 @@ class MainActivity : AppCompatActivity() {
             rbtCapital.setOnClickListener { atualizarCampos() }
             rbtTaxa.setOnClickListener { atualizarCampos() }
             rbtPrazo.setOnClickListener { atualizarCampos() }
-            //Evellyn daqui pra baixo
+            // Zerbinati daqui pra baixo
+
             btnLimpar.setOnClickListener {
                 txtJuros.text.clear()
                 txtCapital.text.clear()
@@ -61,6 +62,7 @@ class MainActivity : AppCompatActivity() {
                 txtCapital.requestFocus()
             }
             //Vitinho daqui pra baixo
+
                 //Kauan daqui pra baixo
 
             }
