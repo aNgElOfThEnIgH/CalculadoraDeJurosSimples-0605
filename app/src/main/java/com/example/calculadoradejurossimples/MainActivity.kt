@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             rbtTaxa.setOnClickListener { atualizarCampos() }
             rbtPrazo.setOnClickListener { atualizarCampos() }
 
-            // Zerbinati daqui pra baixo
+            // Zerbinati daqui pra baixo, a Zerbinati esteve aqui
 
             btnLimpar.setOnClickListener {
                 txtJuros.text.clear()
