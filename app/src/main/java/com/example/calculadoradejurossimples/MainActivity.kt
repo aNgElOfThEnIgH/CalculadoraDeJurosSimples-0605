@@ -73,8 +73,21 @@ class MainActivity : AppCompatActivity() {
                 var calcI = 0.00
                 var calcN = 0
                 var calcJ = 0.00
-                //Kauan daqui pra baixo
+                //Kauã daqui para baixo
 
+                if (rbtJuros.isChecked) {
+                    calcJ = (cap * tax * prz) / 100
+                    txtJuros.setText(String.format("%.2f", calcJ))
+                } else if (rbtCapital.isChecked) {
+                    calcC = juros / (tax / 100 * prz)
+                    txtCapital.setText(String.format("%.2f", calcC))
+                } else if (rbtTaxa.isChecked) {
+                    calcI = (juros / (cap * prz)) * 100
+                    txtTaxa.setText(String.format("%.2f", calcI))
+                } else if (rbtPrazo.isChecked) {
+                    calcN = (juros / ((cap * tax) / 100)).toInt()
+                    txtPrazo.setText(calcN.toString())
+                }
             }
         }
     }
